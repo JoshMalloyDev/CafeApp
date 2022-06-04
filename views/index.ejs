@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mate Lounge</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Fugaz+One%7CLeckerli+One&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  </head>
+
+  <body>
+    <div id="main-bar">
+      <nav id="tabs">
+        <ul>
+          <a href="/login"><li class="tab-btn cat-coding active">Sign in</li></a>
+        </ul>
+        <ul>
+          <a href="/signup"><li class="tab-btn cat-social">New employee</li></a>
+        </ul>
+      </nav>
+      <div id="buttons">
+        <span class="btn btn-close">&#xff58;</span>
+        <span class="btn btn-maximize">□</span>
+        <span class="btn btn-minimize">-</span>
+      </div>
+    </div>
+    <div class="content">
+      <h1>The Cascade Cafe</h1>
+
+     
+
+    
+  
+   
+
+      <ul class="boxes">
+        <form class="CashierTitle" action="/orders" method="POST">
+      
+
+          <li class="box">
+            <h2>Coffee</h2>
+
+            <p class="prices">
+              <input type="checkbox" value="small" name="size" />
+              <span class="checkmark"></span>
+              <label class="size">Small $2 </label>
+
+              <input type="checkbox" value="large" name="size" />
+              <span class="checkmark"></span>
+              <label class="size">Large $4 </label>
+            </p>
+            <dl>
+              <input type="checkbox" value="House Blend" name="order" />
+              <span class="checkmark"></span>
+              <label>House Blend</label>
+              <dd class="description">
+                <p>Smoky, strong, and assertive, just like us.</p>
+              </dd>
+              <br />
+              <input
+                type="checkbox"
+                value="Organic French Roast"
+                name="order"
+              />
+              <span class="checkmark"></span>
+              <label>Organic French Roast</label>
+              <dd class="description">
+                <p>Smooth and mellow with hints of molasses.</p>
+              </dd>
+              <br />
+              <input type="checkbox" value="Organic Decaf " name="order" />
+              <span class="checkmark"></span>
+              <label>Organic Decafe</label>
+              <dd class="description">
+                <p>
+                  Full bodied and rich, we promise you won't miss the caffiene.
+                </p>
+              </dd>
+            </dl>
+          </li>
+
+          <li class="box">
+            <h2>Espresso Drinks</h2>
+            <p class="prices">
+              <input type="checkbox" value="small" name="size" />
+              <span class="checkmark"></span>
+              <label class="size">Small $2 </label>
+
+              <input type="checkbox" value="large" name="size" />
+              <span class="checkmark"></span>
+              <label class="size">Large $4 </label>
+            </p>
+            <dl>
+              <input type="checkbox" value="Machiatto" name="order" />
+              <span class="checkmark"></span>
+              <label>Machiatto</label>
+              <dd class="description">
+                <p>Espressso and steamed milk, served in a demitasse cup.</p>
+              </dd>
+              <br />
+              <input type="checkbox" value="Latte" name="order" />
+              <span class="checkmark"></span>
+              <label>Latte</label>
+              <dd class="description">
+                <p>
+                  Espresso with steamed milk, and sometimes a little art on top.
+                </p>
+              </dd>
+              <br />
+              <input type="checkbox" value="Mocha" name="order" />
+              <span class="checkmark"></span>
+              <label>Mocha</label>
+              <dd class="description">
+                <p>
+                  Espresso with steamed chocolate milk and whipped cream. Also
+                  available with white chocolate milk.
+                </p>
+              </dd>
+
+              <br />
+              <input type="checkbox" value="Americano" name="order" />
+              <span class="checkmark"></span>
+              <label>Americano</label>
+              <dd class="description">
+                <p>1 shot espresso, two shots hot water.</p>
+              </dd>
+            </dl>
+          </li>
+
+          <li class="box">
+            <h2>Tea</h2>
+
+            <p class="prices">
+              <input type="checkbox" value="small" name="size" />
+              <span class="checkmark"></span>
+              <label class="size">Small $2 </label>
+
+              <input type="checkbox" value="large" name="size" />
+              <span class="checkmark"></span>
+              <label class="size">Large $4 </label>
+            </p>
+
+            <dl>
+              <input type="checkbox" value="Earl Grey" name="order" />
+              <span class="checkmark"></span>
+              <label>Earl Grey</label>
+              <dd class="description">
+                <p>Black tea fragranced with bergamot.</p>
+              </dd>
+              <br />
+              <input type="checkbox" value="Ginger Hibiscus" name="order" />
+              <span class="checkmark"></span>
+              <label>Ginger Hibiscus</label>
+              <dd class="description">
+                <p>Floral, tart, and spicy. Caffeine free.</p>
+              </dd>
+              <br />
+              <input type="checkbox" value="Cascade Green" name="order" />
+              <span class="checkmark"></span>
+              <label>Cascade Green</label>
+              <dd class="description">
+                <p>
+                  A blend of green teas hand selected by our master teamaker.
+                </p>
+              </dd>
+              <br />
+              <!-- <input type="checkbox" value="Chamomile" name="order" />
+              <span class="checkmark"></span>
+              <label>Chamomile</label>
+              <dd class="description">
+                <p>
+                  Soothing and slightly sweet. Try it with honey! Caffeine free.
+                </p>
+              </dd> -->
+            </dl>
+          </li>
+
+          <li class="box">
+            <h2>Iced Drinks</h2>
+            <p class="prices">
+              <input type="checkbox" value="small" name="size" />
+              <span class="checkmark"></span>
+              <label class="size">Small $2 </label>
+
+              <input type="checkbox" value="large" name="size" />
+              <span class="checkmark"></span>
+              <label class="size">Large $4 </label>
+            </p>
+            <dl>
+              <input
+                type="checkbox"
+                value="Snickerdoodle Frappe"
+                name="order"
+              />
+              <span class="checkmark"></span>
+              <label>Frappe</label>
+              <dd class="description">
+                <p>
+                  Cinnamony goodness made from scratch with our prizewinning
+                  Snickerdoodle recipe.
+                </p>
+              </dd>
+              <br />
+              <input type="checkbox" value="Cold Brew" name="order" />
+              <span class="checkmark"></span>
+              <label>Coconut Cold Brew</label>
+              <dd class="description">
+                <p>
+                  Brewed locally, and poured with charm you can't get anywhere
+                  else.
+                </p>
+              </dd>
+              <br />
+              <input type="checkbox" value="The Big Chill Out" name="order" />
+              <span class="checkmark"></span>
+              <label>The Big Chill Out</label>
+              <dd class="description">
+                <p>
+                  Lavendar, Chamomile and CBD-infused tea to help you with Demo
+                  Day nerves.
+                </p>
+              </dd>
+            </dl>
+          </li>
+          <div class="customer">
+            <input type="text" placeholder="Customer Name" name="cName" class="name"/>
+            <button class="order" type="submit">submit order</button>
+          </div>
+        </form>
+      </ul>
+    </div>
+  </body>
+</html>

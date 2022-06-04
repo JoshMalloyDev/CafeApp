@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<!-- links to all the files main css, bootstrap etc -->
+<head>
+  <title>Mate Lounge</title>
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="profile.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+  <div class="">
+
+    <div class="page-header text-center">
+      <h1><span class="fa fa-blender"></span>
+        Orders Available Below</h1>
+        <!-- logout link -->
+        <h2 class="logout"><a href="/logout" >Logout</a>
+        </h2>
+    </div>
+
+    <div class="">
+
+        <h6 id="pending"></h6>
+        <ul class="messages">
+          <% for(var i=0; i< orders.length; i++) {%> <!-- a for loop to go over the class="message" displaying the name, message, ready, thumbDown and trashcan. In addition to any other feature you want to add-->
+          <li class="message">
+            <span><%= orders[i].name%></span>
+            <span><%= orders[i].size %></span>
+            <span><%= orders[i].order %></span>
+            <span><%= orders[i].status %></span>
+            <span><%= orders[i].barista %></span>
+            <% if(orders[i].status !== 'is ready for pick-up'){%>
+            <!-- <p class="voice"><%= orders[i].name %> <%= orders[i].order%> <%= orders[i].status %> </p> -->
+
+            <!-- <span><i class="fas fa-volume-up" aria-hidden="true"></i></span> -->
+            <!-- <input type="text" value="<%= user.local.email %>" name="barista"> -->
+            <!-- <span><i class="fas fa-mug-hot" aria-hidden="true"></i></span> -->
+            <% } %>
+            <!-- <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span> -->
+            <!-- <span><i class="fa fa-trash" aria-hidden="true"></i></span> -->
+
+            <section class="deleteSection">
+              <div class="container">
+                <div class="button fas fa-mug-hot">
+                  <div class="base"></div>
+                  <input type="checkbox" id="push">
+                  <label for="push"></label>
+                  <div class="btn"><button></button></div>
+                </div>
+              </div>
+              <div id="app-cover" class="fa-trash">
+                <input type="checkbox" id="checkbox">
+                <div id="bin-icon">
+                  <div id="lid"></div>
+                  <div id="box">
+                    <div id="box-inner">
+                      <div id="bin-lines"></div>
+                    </div>
+                  </div>
+                </div>
+                <div id="layer"></div>
+              </div>
+              </section>
+          </li>
+          <% } %>
+        </ul>
+
+        <% if (user.local.email) { %>
+      </div>
+      <% } %>
+    </div>
+   
+    <script src="main.js"></script>
+
+</body>
+
+</html>
